@@ -1,0 +1,15 @@
+# schema.graphql
+type Query {
+  getTable1Item(id: ID!): Table1
+  getTable2Item(id: ID!): Table2
+}
+
+type Table1 {
+  id: ID!
+  name: String
+}
+
+type Table2 {
+  id: ID!
+  value: String
+}
